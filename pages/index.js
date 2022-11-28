@@ -18,8 +18,7 @@ const Home = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ authorInput }),
-                body: JSON.stringify({ promptInput }),
+                body: JSON.stringify({ authorInput, promptInput })
             });
 
             const data = await response.json();
